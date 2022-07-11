@@ -1,7 +1,7 @@
 body{margin-top:20px;
     
     }
-.single_advisor_profile {
+/* .single_advisor_profile {
     position: relative;
     margin-bottom: 50px;
     -webkit-transition-duration: 500ms;
@@ -132,7 +132,7 @@ body{margin-top:20px;
 .single_advisor_profile:focus .single_advisor_details_info p {
     color: #ffffff;
 }
-    
+     */
 .masthead{
     position: relative;
     width: 100%;
