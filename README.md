@@ -1,6 +1,4 @@
 # StressLevelPrediction-Project
-![image](https://user-images.githubusercontent.com/60286478/178263880-6b0d1379-8dbe-4125-ae5e-e871483c74ff.png)
-
 Home Page:
 ![11 07 2022_22 59 35_REC](https://user-images.githubusercontent.com/60286478/178321211-de68387a-b3fd-4c46-b989-40032f8829ff.png)
 
@@ -12,3 +10,6 @@ Register Page:
 
 StressPrediction Form:
 ![11 07 2022_23 02 02_REC](https://user-images.githubusercontent.com/60286478/178321598-2c09ff17-b605-41f6-bf9a-6b46340c62e4.png)
+
+
+![image](https://user-images.githubusercontent.com/60286478/178263880-6b0d1379-8dbe-4125-ae5e-e871483c74ff.png)
