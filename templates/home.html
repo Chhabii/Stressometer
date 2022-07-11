@@ -4,7 +4,7 @@
         <h1 class="mb-3">Student Stress Level Prediction and Analysis</h1>
         
     </div>
-    <div class="container " style="height: 200px;">
+    <div class="container " style="height: 150px;">
             <div class="row justify-content-center">
             <div class="col-12 col-sm-8 col-lg-6" >
                 <!-- Section Heading-->
@@ -18,14 +18,15 @@
             </div>
 
     </div>
-    <div class="container " style="height: 200px;">
+    <div class="container " style="height: 300px;">
         <div class="row justify-content-center">
         <div class="col-12 col-sm-8 col-lg-6" >
-        <div class="p-5 text-center dark-green">
-            <button type="button" class="btn btn-success btn-circle btn-xl">Predict Your Stress<br>
+        <div class="p-5 text-center">
+            <a href="{{ url_for('predict') }}">
+                <button type="button" class="btn btn-secondary btn-circle btn-xl" >Predict Your Stress<br>
                 <span class="blink">Click Here!</span>
-
-            </button>
+                </button>
+            </a>
         </div>
         </div>   
     </div>

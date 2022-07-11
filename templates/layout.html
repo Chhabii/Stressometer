@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static',filename='/styles/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='/styles/form.css')}}">
+
     {%if title%}
         <title>StressLevel-{{ title }}</title>
     {%else%}
@@ -52,12 +54,13 @@
           </div>
         </div>
       </main>
+      {%block predict%}{%endblock%}
 
 
 
 
     <!--for dark mode-->
-    <div class="form-check form-switch ms-auto mt-3 me-3" style="position:absolute;bottom:0">
+    <div class="form-check form-switch ms-auto mt-3 me-3" style="position:relative;bottom:0">
         <label class="form-check-label ms-3" for="lightSwitch">
         <svg
             xmlns="http://www.w3.org/2000/svg"
