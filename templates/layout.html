@@ -25,12 +25,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
-                <!-- <a class="nav-item nav-link" href="{{ url_for('teams') }}">Home</a> -->
+                <!-- <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a> -->
               </div>
               <div class="navbar-nav">
                 <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
                 <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
-                <button type="button" class="btn btn-success">Predict Your Stress</button>
+                <!-- <button type="button" class="btn btn-success">Predict Your Stress</button> -->
               </div>
             </div>
           </div>
@@ -52,7 +52,12 @@
           </div>
         </div>
       </main>
-    <div class="form-check form-switch ms-auto mt-3 me-3">
+
+
+
+
+    <!--for dark mode-->
+    <div class="form-check form-switch ms-auto mt-3 me-3" style="position:absolute;bottom:0">
         <label class="form-check-label ms-3" for="lightSwitch">
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +74,8 @@
         </label>
         <input class="form-check-input" type="checkbox" id="lightSwitch" />
     </div>
+    <!--end for dark mode-->
+
 
 
     

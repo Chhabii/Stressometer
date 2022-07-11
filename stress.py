@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 from flask import Flask,render_template,url_for,flash,redirect
-=======
 from time import timezone
 from flask import Flask, flash,render_template,url_for, request, redirect
->>>>>>> be7c7244bf561227f295f28e346f8514f34b18f4
+
 from forms import RegistrationForm,LoginForm
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -36,18 +34,17 @@ app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 
 @app.route('/')
 @app.route('/home')
-@app.route('/teams')
-def teams():
-    return render_template('teams.html',title="Teams")
+def home():
+    return render_template('home.html',title="Teams")
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
-<<<<<<< HEAD
+
     if form.validate_on_submit():
         flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('teams'))
-=======
+        return redirect(url_for('home'))
+
     if request.method == 'POST':
         if form.validate_on_submit():
             username = request.form['username']
@@ -59,8 +56,8 @@ def register():
             
             new_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
             flash(f'Account created for {new_user.username}!', 'success')
-            return redirect(url_for('teams'))
->>>>>>> be7c7244bf561227f295f28e346f8514f34b18f4
+            return redirect(url_for('home'))
+
     return render_template('register.html', title='Register', form=form)
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -69,7 +66,7 @@ def login():
     if form.validate_on_submit():
         if form.email.data == 'admin@blog.com' and form.password.data == 'password':
             flash('You have been logged in!', 'success')
-            return redirect(url_for('teams'))
+            return redirect(url_for('home'))
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)

@@ -165,6 +165,7 @@ color: dimgray;
 text-decoration: overline;
 }
 
+/*for phone dropdown*/
 .dropdown-backdrop {
     position: static;
 }
@@ -188,7 +189,35 @@ text-decoration: overline;
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
   }
-  
+  /* button for prediction*/
+  .btn-circle.btn-xl {
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    padding: 13px 18px;
+    border-radius: 120px;
+    font-size:18px;
+    text-align: center;
+  }
+ .blink{
+  animation: blink-animation 1.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+ }
+ @keyframes blink-animation {
+  to {
+    visibility: hidden;
+    
+  }
+  0%{opacity: 0;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
   /* .content-section {
     background: #ffffff;
     padding: 10px 20px;
