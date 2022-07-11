@@ -10,4 +10,5 @@ Login Page:
 Register Page:
 ![11 07 2022_23 01 10_REC](https://user-images.githubusercontent.com/60286478/178321339-aa59a03c-d389-4dbd-a01d-2e75f3165dd0.png)
 
-
+StressPrediction Form:
+![11 07 2022_23 02 02_REC](https://user-images.githubusercontent.com/60286478/178321598-2c09ff17-b605-41f6-bf9a-6b46340c62e4.png)
