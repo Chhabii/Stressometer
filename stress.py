@@ -1,5 +1,11 @@
+
 from flask import Flask,render_template,url_for,flash,redirect, request, redirect
 from time import timezone
+
+from flask import Flask,render_template,url_for,flash,redirect
+from time import timezone
+from flask import Flask, flash,render_template,url_for, request, redirect
+
 from forms import RegistrationForm,LoginForm
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -36,6 +42,7 @@ app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 @app.route('/home')
 def home():
     return render_template('home.html',title="Home")
+
 ########ONCE USER IS LOGGEN IN THEN REDIRECT THEM TO DASHBOARD#######
 @app.route('/dashboard')
 @login_required
@@ -44,14 +51,21 @@ def dashboard():
 ####################################################################
 
 
+
 ######################### REGISTER BEGIN ####################################
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
 
+
     # if form.validate_on_submit():
     #     flash(f'Account created for {form.username.data}!', 'success')
     #     return redirect(url_for('home'))
+
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'success')
+        return redirect(url_for('home'))
+
 
     if request.method == 'POST':
         if form.validate_on_submit():
@@ -60,6 +74,7 @@ def register():
             password = request.form['password']
         #check if the entered username and email already exist in the db.     
             new_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
+
             new_email = Users.query.filter_by(email=email).first()#get recently registered user's email from db to confirm registration
    
         #if entered username and email already exist show error
@@ -76,12 +91,16 @@ def register():
                 
                 flash(f'Account created for {reg_user.username}!', 'success')
                 return redirect(url_for('home'))
+
+            flash(f'Account created for {new_user.username}!', 'success')
+            return redirect(url_for('home'))
+
     return render_template('register.html', title='Register', form=form)
 ################################# REGISTER END ####################################
 
 ################################# LOGIN BEGIN #####################################
 
-#falsk login manager
+#flask login manager
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -110,6 +129,7 @@ def login():
                     flash('Login Unsuccessful. Please check email and password', 'danger')
 
     return render_template('login.html', title='Login', form=form)
+
 
 #create logout
 @app.route('/logout')
