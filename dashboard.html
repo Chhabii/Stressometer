@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Dashboard</h1>
+<br>
+<b>You are loggend in: </b>
+<br>
+<a href="{{ url_for('logout') }}">Logout</a>
+<br><br>
+<strong>user id: </strong>
+{{ current_user.id }}</br>
+<strong>Username: </strong>
+{{ current_user.username }}</br>
+<strong>Email: </strong>
+{{ current_user.email }}</br>
+<strong>Account Created at: </strong>
+{{ current_user.created_at }}</br>
+{% endblock content %}
