@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if current_user.user_type == "admin" %}
+<h3>Admin Details: </h3>
+{% else %}
+<h3>Student Details: </h3>
+
+{% endif %}
+</br>
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">User Id</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Stress Level</th>
+        <th scope="col">User type</th>
+        <th scope="col">Created at</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        {% for item in users %}
+        <tr>
+
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.password}}</td>
+        <td>{{item.user_type}}</td>
+        <td>{{item.created_at}}</td>
+        </tr>
+  
+
+        {% endfor %}
+        
+      
+
+    </tbody>
+  </table>
+  
+  
+
+
+  {% endblock content %}
