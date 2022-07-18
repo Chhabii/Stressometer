@@ -1,11 +1,5 @@
-
 from flask import Flask,render_template,url_for,flash,redirect, request, redirect
 from time import timezone
-
-from flask import Flask,render_template,url_for,flash,redirect
-from time import timezone
-from flask import Flask, flash,render_template,url_for, request, redirect
-
 from forms import RegistrationForm,LoginForm
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -28,6 +22,7 @@ class Users(db.Model, UserMixin):
     username = db.Column(db.String(length=50), unique=True, nullable=False)
     email = db.Column(db.String(length=100), unique=True, nullable=False)
     password = db.Column(db.String(length=100), nullable=False)
+    user_type = db.Column(db.String(length=20), nullable = False)
     created_at = db.Column(db.DateTime(timezone=True),server_default=func.now())
 
     #debug
@@ -42,39 +37,35 @@ app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 @app.route('/home')
 def home():
     return render_template('home.html',title="Home")
-
 ########ONCE USER IS LOGGEN IN THEN REDIRECT THEM TO DASHBOARD#######
 @app.route('/dashboard')
 @login_required
 def dashboard():
     return render_template('dashboard.html',title="Dashboard")
-####################################################################
 
+@app.route('/view/<type>')
+@login_required
+def view(type="student"):
+    if type == "student":
+        users = Users.query.filter_by(user_type='student').all()
+    else:
+        users = Users.query.filter_by(user_type='admin').all()
+        
 
+    return render_template('view.html',title="Students Details", users=users)
 
-######################### REGISTER BEGIN ####################################
-@app.route("/register", methods=['GET', 'POST'])
-def register():
+@app.route('/add_admin', methods=['GET', 'POST'])
+@login_required
+def add_admin():
     form = RegistrationForm()
-
-
-    # if form.validate_on_submit():
-    #     flash(f'Account created for {form.username.data}!', 'success')
-    #     return redirect(url_for('home'))
-
-    if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('home'))
-
-
     if request.method == 'POST':
         if form.validate_on_submit():
             username = request.form['username']
             email = request.form['email']
             password = request.form['password']
+            user_type = "admin"
         #check if the entered username and email already exist in the db.     
             new_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
-
             new_email = Users.query.filter_by(email=email).first()#get recently registered user's email from db to confirm registration
    
         #if entered username and email already exist show error
@@ -84,23 +75,59 @@ def register():
                 flash('The Email is already registered.', 'danger')
         #else if unique usename and email then register user
             else:
-                user = Users(username = username, email = email,password = password)             
+                user = Users(username = username, email = email,password = password, user_type = user_type)             
+                db.session.add(user)
+                db.session.commit()
+                reg_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
+                
+                flash(f'Admin account created for {reg_user.username}!', 'success')
+                
+
+    
+
+    return render_template('addAdmin.html',title="Add new admin",form=form)
+####################################################################
+
+
+######################### REGISTER BEGIN ####################################
+@app.route("/register", methods=['GET', 'POST'])
+def register():
+    form = RegistrationForm()
+
+    # if form.validate_on_submit():
+    #     flash(f'Account created for {form.username.data}!', 'success')
+    #     return redirect(url_for('home'))
+
+    if request.method == 'POST':
+        if form.validate_on_submit():
+            username = request.form['username']
+            email = request.form['email']
+            password = request.form['password']
+            user_type = "student"
+        #check if the entered username and email already exist in the db.     
+            new_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
+            new_email = Users.query.filter_by(email=email).first()#get recently registered user's email from db to confirm registration
+   
+        #if entered username and email already exist show error
+            if new_user:
+                flash('The username is already taken.', 'danger')
+            elif new_email:
+                flash('The Email is already registered.', 'danger')
+        #else if unique usename and email then register user
+            else:
+                user = Users(username = username, email = email,password = password, user_type = user_type)             
                 db.session.add(user)
                 db.session.commit()
                 reg_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
                 
                 flash(f'Account created for {reg_user.username}!', 'success')
                 return redirect(url_for('home'))
-
-            flash(f'Account created for {new_user.username}!', 'success')
-            return redirect(url_for('home'))
-
     return render_template('register.html', title='Register', form=form)
 ################################# REGISTER END ####################################
 
 ################################# LOGIN BEGIN #####################################
 
-#flask login manager
+#falsk login manager
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -118,18 +145,20 @@ def login():
             email = request.form['email']
             password = request.form['password']
             user_db = Users.query.filter_by(email=email).first()#get recently registered user's username from db to confirm registration
-            email_db = user_db.email
-            password_db = user_db.password
+            
+            
             if user_db:
+                password_db = user_db.password
                 if password_db == password:
                     login_user(user_db)
-                    flash("You have been logged in! Your username is "+str(user_db.username), 'success')
+                    flash("You have been logged in!", 'success')
                     return redirect(url_for('dashboard'))
                 else:
                     flash('Login Unsuccessful. Please check email and password', 'danger')
+            else:
+                flash('User doesnot exist!!!','danger')
 
     return render_template('login.html', title='Login', form=form)
-
 
 #create logout
 @app.route('/logout')
@@ -140,6 +169,11 @@ def logout():
     return redirect(url_for('home')) 
 
 ################################## LOGIN END ########################################
+
+################################## ADMIN DASHBOARD BEGIN########################################
+
+
+################################## ADMIN DASHBOARD END ########################################
 
 
 #prediction form
