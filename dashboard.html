@@ -1,17 +1,82 @@
 {% extends "layout.html" %}
 {% block content %}
-<h1>Dashboard</h1>
+
 <br>
-<b>You are loggend in: </b>
-<br>
-<a href="{{ url_for('logout') }}">Logout</a>
-<br><br>
-<strong>user id: </strong>
+<b>You are logged in: </b>
+<!-- <br>
+<a href="{{ url_for('logout') }}">Logout</a> -->
+
+<!-- <strong>user id: </strong>
 {{ current_user.id }}</br>
 <strong>Username: </strong>
 {{ current_user.username }}</br>
 <strong>Email: </strong>
 {{ current_user.email }}</br>
 <strong>Account Created at: </strong>
-{{ current_user.created_at }}</br>
+{{ current_user.created_at }}</br> -->
+</br>
+</br>
+{% if current_user.username == "admin" %}
+<h3>Admin Dashboard</h3></br>
+<div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">Add new students</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Add</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">View Students</h5>
+          <p class="card-text"></p>
+          <a href="{{ url_for('view', type='student') }}" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Update Students Profile</h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">Update</a>
+          </div>
+        </div>
+      </div>
+ 
+
+
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">Add Admins</h5>
+          <p class="card-text"></p>
+          <a href="{{ url_for('add_admin') }}" class="btn btn-primary">Add</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">View Admins</h5>
+          <p class="card-text"></p>
+          <a href="{{ url_for('view', type='admin') }}" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+
+ 
+
+
+  </div>
+  {% else %}
+  <h1>Student Dashboard: </h1>
+  {% endif %}
 {% endblock content %}
