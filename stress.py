@@ -10,7 +10,7 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 ####################################### DATABASE ######################################
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-
+###
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'users.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #disable tracking so that app uses less memory
