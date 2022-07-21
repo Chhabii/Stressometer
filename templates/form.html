@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+{%block form%}
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
+<div class="container survey">
+  <h1 id="title" class="text-center">Stress Prediction Form</h1>
+  <p id="description" class="text-center">Fill the form carefully.</p>
+  <hr style=" display: block; overflow: hidden; border-style: inset; border-width: 1px;">
+
+  <form action="{{url_for('predict')}}" id="survey-form" method="POST">
+
+      <div class="radiobuttons">
+          <p">Gender</p>
+            <ul style="list-style: none;">
+            <li class="radio"><input name="gender" value="1"  type="radio" class="userRatings" ><label> Male</label></li>
+              <li class="radio"><input name="gender" value="0"  type="radio" class="userRatings" ><label> Female</label></li>
+            </ul>
+      </div>
+      <div>
+          <p >Financial Issues</p><ul class="checkboxlabel">
+          <li class="checkbox" style="list-style: none;"><label> <input name="financial_issues0" value="1" type="checkbox" class="userRatings"> Repay Loan Issues</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="financial_issues1" value="1" type="checkbox" class="userRatings"> Deadline of Fee payment</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="financial_issues2" value="1" type="checkbox" class="userRatings"> Payment for Hostel</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="financial_issues3" value="1" type="checkbox" class="userRatings"> Others</label></li>
+              </ul>
+      </div>
+      <div>
+          <p >Family Issues</p><ul class="checkboxlabel">
+          <li class="checkbox" style="list-style: none;"><label> <input name="family_issues0" value="1" type="checkbox" class="userRatings"> Parental Expectations</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="family_issues1" value="1" type="checkbox" class="userRatings"> Being bullied by siblings</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="family_issues2" value="1" type="checkbox" class="userRatings"> Divorce of Parents</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="family_issues3" value="1" type="checkbox" class="userRatings"> Poor Communication and misunderstandings</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="family_issues4" value="1" type="checkbox" class="userRatings"> Negligence of Children</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="family_issues5" value="1" type="checkbox" class="userRatings"> Others</label></li>
+              </ul>
+      </div>
+
+      <div class="form-group">
+          <label id="number-label">Study Hours</label>
+          <input id="number" name="study_hours" type="number" min="0" max="24" class="form-control" id="number" placeholder="Hours" required>
+      </div>
+      <br/>
+      <div>
+          <p >Last Three months Health Issues</p><ul class="checkboxlabel">
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues0" value="1" type="checkbox" class="userRatings"> Malnutrition</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues1" value="1" type="checkbox" class="userRatings"> Sinus or Migraine or Headaches</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues2" value="1" type="checkbox" class="userRatings"> Covid</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues3" value="1" type="checkbox" class="userRatings"> Insomnia (Sleep Deprivation)</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues4" value="1" type="checkbox" class="userRatings"> Low Energy</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues5" value="1" type="checkbox" class="userRatings"> Anxiety or Tension</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues6" value="1" type="checkbox" class="userRatings"> Lonliness</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues7" value="1" type="checkbox" class="userRatings"> Sleeping Problem</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues8" value="1" type="checkbox" class="userRatings"> Concentration Problem</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="health_issues9" value="1" type="checkbox" class="userRatings"> Others</label></li>
+              </ul>
+      </div>
+      <div>
+          <p >Friends Issues</p><ul class="checkboxlabel">
+          <li class="checkbox" style="list-style: none;"><label> <input name="friends_issues0" value="1" type="checkbox" class="userRatings"> Conflicts</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="friends_issues1" value="1" type="checkbox" class="userRatings"> Comparison between them</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="friends_issues2" value="1" type="checkbox" class="userRatings"> Jealousy</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="friends_issues3" value="1" type="checkbox" class="userRatings"> Mistrust</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="friends_issues4" value="1" type="checkbox" class="userRatings"> Betrayal</label></li>
+          <li class="checkbox" style="list-style: none;"><label> <input name="friends_issues5" value="1" type="checkbox" class="userRatings"> Others</label></li>
+              </ul>
+      </div>
+
+      <div class="form-group">
+          <label id="number-label">Average Time spent with Friends</label>
+          <input id="number" name="time_with_friends"  type="number" min="0" max="24" class="form-control" id="number" placeholder="Hours" required>
+      </div> 
+      <br/>
+
+      <div class="radiobuttons">
+          <p>Feeling overload with University work</p>
+            <ul style="list-style: none;">
+            <li class="radio"><input name="overload" value="1"  type="radio" class="userRatings" ><label> Yes</label></li>
+              <li class="radio"><input name="overload" value="0"  type="radio" class="userRatings" ><label> No</label></li>
+            </ul>
+      </div>
+      <div class="radiobuttons">
+          <p>Unpleasant working environment</p>
+            <ul style="list-style: none;">
+            <li class="radio"><input name="unpleasant" value="1"  type="radio" class="userRatings" ><label> Yes</label></li>
+              <li class="radio"><input name="unpleasant" value="0"  type="radio" class="userRatings" ><label> No</label></li>
+            </ul>
+      </div>
+      <div class="radiobuttons">
+          <p>Lack of confidence with academic performance</p>
+            <ul style="list-style: none;">
+            <li class="radio"><input name="academic" value="1"  type="radio" class="userRatings" ><label> Yes</label></li>
+              <li class="radio"><input name="academic" value="0"  type="radio" class="userRatings" ><label> No</label></li>
+            </ul>
+      </div>
+      <div class="radiobuttons">
+          <p>Lack of confidence with subject or career choice</p>
+            <ul style="list-style: none;">
+            <li class="radio"><input name="career" value="1"  type="radio" class="userRatings" ><label> Yes</label></li>
+              <li class="radio"><input name="career" value="0"  type="radio" class="userRatings" ><label> No</label></li>
+            </ul>
+      </div>
+      <div class="radiobuttons">
+          <p>Criticism about work</p>
+            <ul style="list-style: none;">
+            <li class="radio"><input name="criticism" value="1"  type="radio" class="userRatings" ><label> Yes</label></li>
+              <li class="radio"><input name="criticism" value="0"  type="radio" class="userRatings" ><label> No</label></li>
+            </ul>
+      </div>
+      <div class="radiobuttons">
+          <p>Conflicts between University work and Extracurricular</p>
+            <ul style="list-style: none;">
+            <li class="radio"><input name="conflicts" value="1"  type="radio" class="userRatings" ><label> Yes</label></li>
+              <li class="radio"><input name="conflicts" value="0"  type="radio" class="userRatings" ><label> No</label></li>
+            </ul>
+      </div>
+
+    <div>
+      <div class="container ">
+          <div class="row justify-content-center">
+              <a">
+                  <button type="submit" class="btn btn-secondary" style="padding: 10px;" >Predict Your Stress<br>
+                  </button>
+              </a>
+      </div>
+
+  </form>
+  <br/>
+  <br>
+</div>
+
+{%endblock form%}
