@@ -263,7 +263,13 @@ def predict():
         prediction = model.predict(final_features)
         print(prediction)
         output = prediction[0]
-        return render_template('result.html',prediction_text = 'Your Stress Level is {}'.format(output))
+        if output==0:
+            pred = "Acute Stress"
+        elif output==1:
+            pred = "Episodic Acute Stress"
+        else:
+            pred = "Chronic Stress"
+        return render_template('result.html',prediction_text = pred)
 
 @app.route('/result')
 def result():

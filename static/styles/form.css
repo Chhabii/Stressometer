@@ -2,6 +2,7 @@
     display:inherit;
     justify-content: space-between;
     text-align:justify;
+    font-size: 110%;
 
   }
   textarea{
@@ -9,18 +10,24 @@
   }
   .radiobuttons{
     display:inherit;
+    margin-top: 15px;
+  }
+  .radio{
+    font-size:110%;
+
   }
   .survey{
     /* font-family: 'Raleway', sans-serif; */
     margin-top:25px;
   }
+/* 
   h1{
-    font-weight:400;
-    /* font-family: 'Merriweather', serif */
-  }
-  #description{
-    /* font-family: 'Merriweather', serif */
-  }
+    font-weight:20;
+    font-family: 'Merriweather', serif
+  } */
+  /* #description{
+    font-family: 'Merriweather', serif
+  } */
   @media(max-width:500px){
     .checkboxlabel{
     display:block;  
