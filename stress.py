@@ -9,7 +9,7 @@ import pickle
 import numpy as np
 
 ####################################### DATABASE ######################################
-
+model = pickle.load(open('models.pkl','rb'))
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
@@ -91,45 +91,6 @@ def add_admin():
 
     return render_template('addAdmin.html',title="Add new admin",form=form)
 
-
-
-
-
-
-
-
-@app.route('/add_admin', methods=['GET', 'POST'])
-@login_required
-def add_admin():
-    form = RegistrationForm()
-    if request.method == 'POST':
-        if form.validate_on_submit():
-            username = request.form['username']
-            email = request.form['email']
-            password = request.form['password']
-            user_type = "admin"
-        #check if the entered username and email already exist in the db.     
-            new_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
-            new_email = Users.query.filter_by(email=email).first()#get recently registered user's email from db to confirm registration
-   
-        #if entered username and email already exist show error
-            if new_user:
-                flash('The username is already taken.', 'danger')
-            elif new_email:
-                flash('The Email is already registered.', 'danger')
-        #else if unique usename and email then register user
-            else:
-                user = Users(username = username, email = email,password = password, user_type = user_type)             
-                db.session.add(user)
-                db.session.commit()
-                reg_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
-                
-                flash(f'Admin account created for {reg_user.username}!', 'success')
-                
-
-    
-
-    return render_template('addStud.html',title="Add new admin",form=form)
 ####################################################################
 
 
@@ -218,6 +179,8 @@ def logout():
 
 
 ################################## ADMIN DASHBOARD END ########################################
+
+
 @app.route('/form')
 def form():
     return render_template('form.html')
@@ -309,7 +272,7 @@ def predict():
 
 #prediction form
 @app.route("/result")
-def predict():
+def result():
     return render_template('result.html')
 
 
