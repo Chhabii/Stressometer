@@ -5,7 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 from sqlalchemy.sql import func
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
-
+import pickle 
+import numpy as np
 
 ####################################### DATABASE ######################################
 
@@ -217,12 +218,99 @@ def logout():
 
 
 ################################## ADMIN DASHBOARD END ########################################
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
+@app.route("/predict",methods=['POST'])
+def predict():
+        #gender
+        m_f = int(request.form.get("gender"))
+
+        #finanical_issues
+        financial_issues=0
+        size_financial = 4
+        for i in range(size_financial):
+            s = "financial_issues"+str(i)
+            if request.form.get(s) is None:
+                financial_issues+=0
+            else:
+                financial_issues+=1
+
+        #family_issues
+        family_issues=0
+        size_family = 4
+        for i in range(size_family):
+            s = "family_issues"+str(i)
+            if request.form.get(s) is None:
+                family_issues+=0
+            else:
+                family_issues+=1
+
+        #study hours
+        s_h = int(request.form.get("study_hours"))
+
+        #health_issues
+        health_issues=0
+        size_health = 10
+        for i in range(size_health):
+            s = "health_issues"+str(i)
+            if request.form.get(s) is None:
+                health_issues+=0
+            else:
+                health_issues+=1         
+
+        #friends_issues
+        friends_issues=0
+        size_friends = 6
+        for i in range(size_friends):
+            s = "friends_issues"+str(i)
+            if request.form.get(s) is None:
+                friends_issues+=0
+            else:
+                friends_issues+=1         
+
+        #average time with friends
+        t_f = int(request.form.get("time_with_friends"))
+
+        #Feeling overload with University work
+        overload = int(request.form.get("overload"))
+
+        #Unpleasant working environment
+        unpleasant = int(request.form.get("unpleasant"))
+
+        #Lack of confidence with academic performance
+        academic = int(request.form.get("academic"))
+
+        #Lack of confidence with subject or career choice
+        career = int(request.form.get("career"))
+
+        #Criticism about work
+        criticism = int(request.form.get("criticism"))
+
+        #Conflicts between University work and Extracurricular
+        conflicts = int(request.form.get("conflicts"))
+
+
+        final_features = [np.array([m_f,financial_issues,family_issues,s_h,health_issues,friends_issues,
+        t_f,overload,unpleasant,academic,career,criticism,conflicts])]
+
+        prediction = model.predict(final_features)
+        print(prediction)
+        output = prediction[0]
+        if output==0:
+            pred = "Acute Stress"
+        elif output==1:
+            pred = "Episodic Acute Stress"
+        else:
+            pred = "Chronic Stress"
+        return render_template('result.html',prediction_text = pred)
 
 
 #prediction form
-@app.route("/predict")
+@app.route("/result")
 def predict():
-    return render_template('predict.html')
+    return render_template('result.html')
 
 
 if __name__ == "__main__":
