@@ -2,7 +2,7 @@
 {% block content %}
 
 <br>
-<b>You are loggend in: </b>
+<b>You are logged in: </b>
 <!-- <br>
 <a href="{{ url_for('logout') }}">Logout</a> -->
 
@@ -22,7 +22,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Add new students</h5>
+          <h5 class="card-title text-dark">Add new students</h5>
           <p class="card-text"></p>
           <a href="#" class="btn btn-primary">Add</a>
         </div>
@@ -31,7 +31,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">View Students</h5>
+          <h5 class="card-title text-dark">View Students</h5>
           <p class="card-text"></p>
           <a href="{{ url_for('view', type='student') }}" class="btn btn-primary">View</a>
         </div>
@@ -40,7 +40,7 @@
     <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Update Students Profile</h5>
+            <h5 class="card-title text-dark">Update Students Profile</h5>
             <p class="card-text"></p>
             <a href="#" class="btn btn-primary">Update</a>
           </div>
@@ -56,7 +56,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Add Admins</h5>
+          <h5 class="card-title text-dark">Add Admins</h5>
           <p class="card-text"></p>
           <a href="{{ url_for('add_admin') }}" class="btn btn-primary">Add</a>
         </div>
@@ -65,7 +65,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">View Admins</h5>
+          <h5 class="card-title text-dark">View Admins</h5>
           <p class="card-text"></p>
           <a href="{{ url_for('view', type='admin') }}" class="btn btn-primary">View</a>
         </div>
