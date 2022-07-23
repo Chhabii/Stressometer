@@ -7,7 +7,6 @@ body{margin-top:20px;
     height: 850px;
     min-width: 35rem;
     padding: 15rem 0;
-    /* background:linear-gradient( rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.4) 80%, #000 100%), url("https://img.freepik.com/free-vector/elegant-white-wallpaper-with-golden-details_23-2149095007.jpg?w=2000"); */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -87,6 +86,7 @@ text-decoration: overline;
 /*Navbar*/
 .navbar-brand{
   font-size: 30px;
+  font-weight: 600;
 }
 
 .nav-item {
