@@ -1,8 +1,6 @@
 {% extends "layout.html" %}
 {%block form%}
 
-<!-- <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
 <div class="container survey">
   <h1 id="title" class="text-center">Stress Prediction Form</h1>
   <p id="description" class="text-center">Fill the form carefully.</p>
@@ -11,14 +9,14 @@
   <form action="{{url_for('predict')}}" id="survey-form" method="POST" style="margin-top:40px ;">
 
       <div class="radiobuttons">
-          <h4><b>1) Gender</b></h4>
+          <h4>1) Gender</h4>
             <ul style="list-style: none;">
             <li class="radio"><input name="gender" value="1"  type="radio"  required><label> Male</label></li>
               <li class="radio"><input name="gender" value="0"  type="radio"  ><label> Female</label></li>
             </ul>
       </div>
       <div>
-          <h4 ><b>2) Financial Issues</b></h4>
+          <h4 >2) Financial Issues</h4>
           <p style="margin-left: 40px;">( Select your issues )</p>
           <ul class="checkboxlabel">
           
@@ -29,7 +27,7 @@
               </ul>
       </div>
       <div>
-          <h4><b>3) Family Issues</b></h4>
+          <h4>3) Family Issues</h4>
           <p style="margin-left: 40px;">( Select your issues )</p>
 
           <ul class="checkboxlabel">
@@ -44,13 +42,13 @@
 
       <div class="form-group">
           <!-- <label id="number-label">Study Hours</label> -->
-          <h4><b>4) Study Hours</b> ( per day )</h4>
+          <h4>4) Study Hours ( per day )</h4>
           <input id="number" name="study_hours" type="number" min="0" max="24" class="form-control" id="number" placeholder="Hours" required>
       </div>
       <br/>
       <div>
           <!-- <p >Last Three months Health Issues</p> -->
-          <h4><b>5) Last Three months Health Issues</b></h4>
+          <h4>5) Last Three months Health Issues</h4>
           <p style="margin-left: 40px;">( Select your issues )</p>
           <ul class="checkboxlabel">
           <li class="checkbox" style="list-style: none;"><label> <input name="health_issues0" value="1" type="checkbox" class="userRatings"> Malnutrition</label></li>
@@ -67,7 +65,7 @@
       </div>
       <div>
           <!-- <p >Friends Issues</p> -->
-          <h4><b>6) Friends Issues</b></h4>
+          <h4>6) Friends Issues</h4>
           <p style="margin-left: 40px;">( Select your issues )</p>
           <ul class="checkboxlabel">
           <li class="checkbox" style="list-style: none;"><label> <input name="friends_issues0" value="1" type="checkbox" class="userRatings"> Conflicts</label></li>
@@ -81,7 +79,7 @@
 
       <div class="form-group">
           <!-- <label id="number-label">Average Time spent with Friends</label> -->
-          <h4><b>7) Average Time spent with Friends</b> ( per day )</h4>
+          <h4>7) Average Time spent with Friends ( per day )</h4>
 
           <input id="number" name="time_with_friends"  type="number" min="0" max="24" class="form-control" id="number" placeholder="Hours" required>
       </div> 
@@ -89,7 +87,7 @@
 
       <div class="radiobuttons" >
           <!-- <p>Feeling overload with University work</p> -->
-          <h4><b>8) Feeling overload with University work</b></h4>
+          <h4>8) Feeling overload with University work</h4>
             <ul style="list-style: none;">
             <li class="radio"><input name="overload" value="1"  type="radio" required ><label> Yes</label></li>
               <li class="radio"><input name="overload" value="0"  type="radio"  ><label> No</label></li>
@@ -97,7 +95,7 @@
       </div>
       <div class="radiobuttons">
           <!-- <p>Unpleasant working environment</p> -->
-          <h4><b>9) Unpleasant working environment</b></h4>
+          <h4>9) Unpleasant working environment</h4>
 
             <ul style="list-style: none;">
             <li class="radio"><input name="unpleasant" value="1"  type="radio" required><label> Yes</label></li>
@@ -106,7 +104,7 @@
       </div>
       <div class="radiobuttons">
           <!-- <p>Lack of confidence with academic performance</p> -->
-          <h4><b>10) Lack of confidence with academic performance</b></h4>
+          <h4>10) Lack of confidence with academic performance</h4>
           
             <ul style="list-style: none;">
             <li class="radio"><input name="academic" value="1"  type="radio" required ><label> Yes</label></li>
@@ -115,7 +113,7 @@
       </div>
       <div class="radiobuttons">
           <!-- <p>Lack of confidence with subject or career choice</p> -->
-          <h4><b>11) Lack of confidence with subject or career choice</b></h4>
+          <h4>11) Lack of confidence with subject or career choice</h4>
 
             <ul style="list-style: none;">
             <li class="radio"><input name="career" value="1"  type="radio" required ><label> Yes</label></li>
@@ -124,7 +122,7 @@
       </div>
       <div class="radiobuttons">
           <!-- <p>Criticism about work</p> -->
-          <h4><b>12) Criticism about work</b></h4>
+          <h4>12) Criticism about work</h4>
 
             <ul style="list-style: none;">
             <li class="radio"><input name="criticism" value="1"  type="radio" required ><label> Yes</label></li>
@@ -133,7 +131,7 @@
       </div>
       <div class="radiobuttons">
           <!-- <p>Conflicts between University work and Extracurricular</p> -->
-          <h4><b>13) Conflicts between University work and Extracurricular</b></h4>
+          <h4>13) Conflicts between University work and Extracurricular</h4>
 
             <ul style="list-style: none;">
             <li class="radio"><input name="conflicts" value="1"  type="radio" required ><label> Yes</label></li>
