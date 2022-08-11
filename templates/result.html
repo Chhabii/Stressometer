@@ -2,16 +2,30 @@
 {%block predict%}
 
     {%if prediction_text == "Acute Stress"%}
-        <!-- <div class="container">
-            <h1>Your stress level is {{prediction_text}}</h1>
-        </div> -->
+
         <div class="container">
-            <h2>Your stress level is <b>{{prediction_text}}</b></h2>
+            <h2 style="margin-top:15px ;">Your stress level is <b>{{prediction_text}}</b></h2>
             <div class="progress">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow=100" aria-valuemin="0" aria-valuemax="100" style="width:30%">
                 <span class="sr-only">70% Complete</span>
             </div>
             </div>
+            <br>
+
+            <img src="images/acute_stress.jpg"  alt="Acute Stress" />
+
+            <h4 style="line-height: 1.5;">An acute stress reaction occurs when a person experiences certain symptoms after a particularly stressful event. The word 'acute' means the symptoms develop quickly but do not last long. The events are usually very severe and an acute stress reaction typically occurs after an unexpected life crisis. This might be, for example, a serious accident, sudden bereavement, or other traumatic events. Acute stress reactions may also occur as a consequence of sexual assault or domestic violence.
+
+                Acute stress reactions have been seen in people who experience terrorist incidents, major disasters, or war. Military personnel are at more risk as a result of extreme experiences during conflicts.
+                
+                An acute stress reaction usually resolves within 2 to 3 days (often hours).</p>
+            <br>
+            <h1>What are the symptoms of an acute stress reaction?</h1>
+            <p>Symptoms usually develop quickly over minutes or hours - reacting to the stressful event. Symptoms of acute stress reactions may include the following:</p>
+            <ul>
+                <li>Psychological symptoms such as anxiety, low mood, irritability, emotional ups and downs, poor sleep, poor concentration, wanting to be alone.</li>
+                <li>Recurrent dreams or flashbacks, which can be intrusive and unpleasant.</li>
+            </ul>
         </div>
     {%elif prediction_text == "Episodic Acute Stress"%}
         <!-- <div class="container">
