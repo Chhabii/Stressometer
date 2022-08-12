@@ -1,6 +1,20 @@
 body{margin-top:20px;
     font-family: 'Tajawal', sans-serif;
+    
     }
+.container.home_image{
+  position: relative;
+  /* text-align: center; */
+  color: rgb(0, 0, 0);
+}
+.top-left
+{
+  position: absolute;
+  top:10px;
+  left: 150px;
+  font-size: 50px;
+  font-weight: 1000;
+}
 .masthead{
     position: relative;
     width: 100%;
