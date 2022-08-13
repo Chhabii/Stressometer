@@ -1,19 +1,28 @@
+
 body{margin-top:20px;
     font-family: 'Tajawal', sans-serif;
     
     }
+
+
 .container.home_image{
   position: relative;
-  /* text-align: center; */
-  color: rgb(0, 0, 0);
+  text-align: center;
+
+  /* color: rgb(243, 241, 241); */
+
 }
 .top-left
 {
+
   position: absolute;
-  top:10px;
-  left: 150px;
-  font-size: 50px;
-  font-weight: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  /* font-size: 40px;
+  font-weight: bold; */
+
+
 }
 .masthead{
     position: relative;
@@ -106,4 +115,14 @@ text-decoration: overline;
 .nav-item {
   font-size: 20px;
 
+}
+
+
+
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
