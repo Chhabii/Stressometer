@@ -1,0 +1,203 @@
+Gender,financial_issues,family_issues,study_hours,health_issues,friends_issues,friends_time,overload,unpleasant,academic,career,criticism,conflicts,stress_level
+Male,None,Parental Expectations,0,Sinus or Migraine or Headaches,Comparison between them,3,No,No,Yes,No,No,No,Acute Stress
+Male,Repay Loan Issues;Deadline of Fee payment,Parental Expectations,1,Low Energy,Comparison between them,1,Yes,Yes,Yes,No,No,No,Acute Stress
+Male,Payment for Hostel,Parental Expectations,4,Low Energy,Mistrust,6,No,No,No,No,No,Yes,Acute Stress
+Male,Repay Loan Issues,Parental Expectations;Poor Communication and misunderstandings,1,Low Energy;Anxiety or Tension;Concentration Problem,Jealousy;Mistrust,6,Yes,Yes,Yes,Yes,No,Yes,Acute Stress
+Female,Deadline of Fee payment,Parental Expectations;Being bullied by siblings,3,Covid;Low Energy;Anxiety or Tension;Lonliness;Concentration Problem,Comparison between them,9,No,No,Yes,Yes,Yes,Yes,Acute Stress
+Male,Deadline of Fee payment,Parental Expectations,2,Low Energy;Concentration Problem,Betrayal,3,Yes,Yes,Yes,No,No,No,Acute Stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations,2,Sleeping Problem;Concentration Problem,None,5,No,Yes,Yes,Yes,Yes,No,Episodic acute stress
+Male,Deadline of Fee payment,Parental Expectations,1,Anxiety or Tension;Lonliness;Concentration Problem,Comparison between them;Jealousy,3,No,Yes,Yes,Yes,Yes,No,Chronic stress
+Male,Deadline of Fee payment,Parental Expectations,2,Lonliness,None,4,No,No,No,Yes,No,Yes,Chronic stress
+Male,Deadline of Fee payment,Parental Expectations,2,Anxiety or Tension,Mistrust,1,No,No,No,No,No,Yes,Episodic acute stress
+Male,Deadline of Fee payment,Parental Expectations,0,Concentration Problem,Comparison between them,3,No,No,No,Yes,No,No,Acute Stress
+Male,Deadline of Fee payment,Parental Expectations,2,Sinus or Migraine or Headaches,Conflicts,8,Yes,No,No,Yes,No,No,Acute Stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations,4,Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension;Sleeping Problem;Concentration Problem,None,10,Yes,Yes,Yes,No,Yes,Yes,Episodic acute stress
+Male,Repay Loan Issues,Parental Expectations,5,Concentration Problem,Mistrust,10,No,Yes,Yes,Yes,Yes,Yes,Episodic acute stress
+Male,Repay Loan Issues;Deadline of Fee payment;Payment for Hostel,Poor Communication and misunderstandings,0,Sinus or Migraine or Headaches;Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Conflicts;Comparison between them;Betrayal,3,No,Yes,Yes,No,No,Yes,Acute Stress
+Female,Deadline of Fee payment,Parental Expectations,1,Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension,None,2,Yes,Yes,Yes,Yes,Yes,Yes,Acute Stress
+Male,Repay Loan Issues;Deadline of Fee payment,Parental Expectations;Poor Communication and misunderstandings;Negligence of Children,4,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Jealousy,1,Yes,Yes,Yes,Yes,No,Yes,Episodic acute stress
+Male,Repay Loan Issues,Parental Expectations,8,Anxiety or Tension,Conflicts,1,Yes,Yes,No,Yes,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment,Parental Expectations,6,Malnutrition;Sinus or Migraine or Headaches;Low Energy;Lonliness;Concentration Problem,Comparison between them,10,No,Yes,Yes,No,No,No,Acute Stress
+Male,Payment for room rent,Parental Expectations,2,Concentration Problem,Mistrust,6,Yes,Yes,Yes,Yes,No,Yes,Acute Stress
+Male,Deadline of Fee payment,Parental Expectations;Poor Communication and misunderstandings,4,Low Energy;Anxiety or Tension;Lonliness;Concentration Problem,Comparison between them;Mistrust,6,No,Yes,Yes,No,Yes,Yes,Acute Stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations,8,Anxiety or Tension;Sleeping Problem,Comparison between them,6,Yes,Yes,No,No,Yes,Yes,Episodic acute stress
+Female,Repay Loan Issues,Parental Expectations,3,Low Energy;Anxiety or Tension,None,1,Yes,No,No,No,No,Yes,Acute Stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations,2,Sleeping Problem;Concentration Problem,Mistrust,6,No,Yes,Yes,Yes,No,Yes,Chronic stress
+Male,Deadline of Fee payment,Parental Expectations;Internal family dispute ,7,Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Conflicts;Comparison between them;Jealousy,1,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Male,Payment for Hostel,Poor Communication and misunderstandings;Negligence of Children,4,Sinus or Migraine or Headaches;Low Energy;Anxiety or Tension;Lonliness;Concentration Problem,Conflicts;Comparison between them;Mistrust,2,No,Yes,Yes,Yes,No,No,Episodic acute stress
+Male,Repay Loan Issues;Deadline of Fee payment,Poor Communication and misunderstandings,10,Low Energy,Betrayal,10,No,No,Yes,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment,None,3,Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Jealousy,1,Yes,No,Yes,Yes,Yes,Yes,Acute Stress
+Male,None,None,4,Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension;Concentration Problem,Comparison between them;lack of deep communication,8,Yes,No,Yes,Yes,No,Yes,Episodic acute stress
+Male,Deadline of Fee payment,Parental Expectations,2,Anxiety or Tension,Comparison between them,5,Yes,No,No,Yes,No,No,Episodic acute stress
+Male,Family loan,Parental Expectations,3,Concentration Problem,Comparison between them,9,No,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues,None,10,Insomnia (Sleep Deprivation);Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Comparison between them,3,Yes,No,Yes,No,Yes,Yes,Acute Stress
+Male,Repay Loan Issues,Parental Expectations,4,Anxiety or Tension,friendly,3,Yes,Yes,Yes,No,No,Yes,Acute Stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Negligence of Children,1,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Low Energy;Lonliness;Sleeping Problem;Concentration Problem,Mistrust,3,Yes,Yes,Yes,No,Yes,Yes,Episodic acute stress
+Male,Deadline of Fee payment,None,1,Sinus or Migraine or Headaches,None,3,Yes,No,No,Yes,No,Yes,Acute Stress
+Male,Deadline of Fee payment,Parental Expectations,6,Concentration Problem,Comparison between them,4,No,No,Yes,Yes,No,Yes,Episodic acute stress
+Male,Deadline of Fee payment,Parental Expectations,6,Concentration Problem,Comparison between them,6,No,No,Yes,Yes,No,Yes,Episodic acute stress
+Male,Payment for Hostel,Parental Expectations,3,Anxiety or Tension,Jealousy;Betrayal,7,No,No,Yes,Yes,Yes,Yes,Acute Stress
+Male,Repay Loan Issues;Deadline of Fee payment,Parental Expectations;Being bullied by siblings,3,Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Conflicts;Comparison between them;Mistrust,2,Yes,Yes,Yes,Yes,Yes,Yes,Episodic acute stress
+Male,Payment for Hostel,Negligence of Children,2,Anxiety or Tension,Betrayal,7,Yes,Yes,No,No,No,Yes,Acute Stress
+Female,Repay Loan Issues,Parental Expectations;Divorce of Parents,4,None,none,5,No,No,No,No,No,No,Acute Stress
+Female,Payment for Hostel,Parental Expectations,2,Sinus or Migraine or Headaches;Low Energy,Jealousy,3,Yes,No,Yes,No,No,No,Acute Stress
+Male,Deadline of Fee payment,Parental Expectations,4,Covid,Jealousy,5,No,No,Yes,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Parental Expectations,5,Sleeping Problem,Comparison between them,3,No,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Parental Expectations,5,Low Energy;Lonliness,Jealousy,4,No,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues,Negligence of Children,5,Low Energy,Comparison between them,4,Yes,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues,Being bullied by siblings,4,Insomnia (Sleep Deprivation),Comparison between them,4,No,No,No,No,Yes,No,Acute Stress
+Male,Repay Loan Issues,Poor Communication and misunderstandings,5,Insomnia (Sleep Deprivation),Jealousy,5,Yes,No,No,No,No,No,Acute Stress
+Male,Payment for Hostel,Being bullied by siblings,3,Sleeping Problem,Comparison between them,5,Yes,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Poor Communication and misunderstandings,4,Lonliness,Jealousy,4,No,Yes,Yes,No,No,No,Acute Stress
+Female,Repay Loan Issues,Parental Expectations,4,Low Energy;Sleeping Problem,Jealousy;Mistrust,5,No,Yes,No,Yes,No,No,Acute Stress
+Female,Repay Loan Issues,Parental Expectations;Divorce of Parents,8,Malnutrition;Lonliness,Mistrust,5,Yes,No,No,No,No,No,Acute Stress
+Female,Repay Loan Issues,Divorce of Parents;Poor Communication and misunderstandings,3,Anxiety or Tension;Sleeping Problem,Comparison between them;Mistrust,5,Yes,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Poor Communication and misunderstandings,5,Low Energy,Jealousy,5,No,No,No,No,No,No,Acute Stress
+Female,Repay Loan Issues,Poor Communication and misunderstandings;Negligence of Children,3,Sinus or Migraine or Headaches;Sleeping Problem,Conflicts;Jealousy,3,No,No,No,Yes,No,No,Acute Stress
+Male,Repay Loan Issues,Parental Expectations,4,Insomnia (Sleep Deprivation),Comparison between them,2,No,No,No,Yes,Yes,No,Acute Stress
+Female,Repay Loan Issues,Parental Expectations,4,Sinus or Migraine or Headaches,Mistrust,4,No,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,4,Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem,Conflicts;Comparison between them,1,Yes,Yes,Yes,No,No,No,Episodic acute stress
+Male,Repay Loan Issues;Payment for Hostel,Parental Expectations;Being bullied by siblings;Divorce of Parents,0,Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension;Lonliness,Comparison between them;Jealousy,2,Yes,No,Yes,No,No,No,Episodic acute stress
+Female,Repay Loan Issues;Payment for Hostel,Divorce of Parents;Negligence of Children,2,Sinus or Migraine or Headaches;Anxiety or Tension;Sleeping Problem,Comparison between them;Mistrust,3,No,No,Yes,No,Yes,Yes,Episodic acute stress
+Male,Repay Loan Issues,Divorce of Parents;Poor Communication and misunderstandings;Negligence of Children,3,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Anxiety or Tension,Comparison between them;Mistrust,3,No,Yes,Yes,No,Yes,No,Episodic acute stress
+Male,Deadline of Fee payment;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings;Negligence of Children,4,Sinus or Migraine or Headaches;Covid;Low Energy;Sleeping Problem,Jealousy;Mistrust,3,No,Yes,Yes,Yes,Yes,No,Episodic acute stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings;Negligence of Children,3,Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension,Conflicts;Comparison between them;Jealousy,3,Yes,Yes,No,Yes,Yes,No,Episodic acute stress
+Female,Deadline of Fee payment;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Covid;Insomnia (Sleep Deprivation);Low Energy,Comparison between them;Jealousy;Mistrust,3,Yes,No,No,Yes,Yes,Yes,Episodic acute stress
+Male,Deadline of Fee payment,Parental Expectations;Divorce of Parents;Negligence of Children,5,Malnutrition;Covid;Anxiety or Tension,Mistrust,3,No,Yes,Yes,Yes,No,No,Episodic acute stress
+Female,Deadline of Fee payment,Parental Expectations;Being bullied by siblings;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Anxiety or Tension,Jealousy,3,Yes,No,Yes,No,Yes,No,Episodic acute stress
+Male,Repay Loan Issues;Deadline of Fee payment,Parental Expectations;Being bullied by siblings,4,Malnutrition;Insomnia (Sleep Deprivation),Comparison between them;Jealousy,3,No,Yes,No,Yes,Yes,No,Episodic acute stress
+Female,Repay Loan Issues;Payment for Hostel,Parental Expectations;Poor Communication and misunderstandings,2,Malnutrition;Covid,Conflicts;Comparison between them;Jealousy,2,No,Yes,No,Yes,No,Yes,Acute Stress
+Female,Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,2,Covid;Anxiety or Tension;Concentration Problem,Comparison between them;Mistrust,2,No,Yes,Yes,No,No,No,Episodic acute stress
+Male,Repay Loan Issues;Payment for Hostel,Parental Expectations;Divorce of Parents;Negligence of Children,3,Malnutrition;Covid;Insomnia (Sleep Deprivation);Anxiety or Tension,Comparison between them;Jealousy;Mistrust,3,Yes,Yes,Yes,No,No,No,Acute Stress
+Female,Repay Loan Issues;Deadline of Fee payment,Divorce of Parents;Poor Communication and misunderstandings,9,Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem,Conflicts;Jealousy;Betrayal,3,No,Yes,No,Yes,Yes,Yes,Episodic acute stress
+Male,Deadline of Fee payment;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings;Negligence of Children,2,Insomnia (Sleep Deprivation);Anxiety or Tension;Lonliness,Comparison between them;Mistrust,9,No,No,Yes,Yes,No,Yes,Episodic acute stress
+Female,Deadline of Fee payment,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,2,Insomnia (Sleep Deprivation);Anxiety or Tension,Comparison between them,9,No,Yes,Yes,Yes,Yes,Yes,Episodic acute stress
+Female,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,4,Low Energy,Mistrust,7,Yes,Yes,No,No,Yes,No,Episodic acute stress
+Male,Repay Loan Issues;Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation),Comparison between them;Mistrust,2,Yes,Yes,No,Yes,No,No,Episodic acute stress
+Male,Deadline of Fee payment,Parental Expectations;Negligence of Children,1,Insomnia (Sleep Deprivation);Lonliness,Comparison between them;Jealousy;Mistrust,4,No,No,Yes,Yes,No,Yes,Episodic acute stress
+Female,Repay Loan Issues;Deadline of Fee payment,Parental Expectations;Divorce of Parents,4,Insomnia (Sleep Deprivation);Anxiety or Tension;Concentration Problem,Jealousy,4,Yes,Yes,Yes,No,No,No,Episodic acute stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,6,Covid;Low Energy;Lonliness,Jealousy;Betrayal,3,Yes,Yes,No,No,Yes,No,Episodic acute stress
+Female,Payment for Hostel,Parental Expectations;Being bullied by siblings,4,Malnutrition,Conflicts,3,Yes,Yes,No,No,Yes,No,Episodic acute stress
+Male,Deadline of Fee payment,Poor Communication and misunderstandings;Negligence of Children,8,Sinus or Migraine or Headaches;Low Energy;Lonliness,Comparison between them;Mistrust,6,No,Yes,No,No,Yes,Yes,Episodic acute stress
+Female,Deadline of Fee payment,Divorce of Parents;Poor Communication and misunderstandings,3,Malnutrition;Low Energy;Sleeping Problem,Jealousy,6,No,Yes,No,Yes,No,Yes,Episodic acute stress
+Male,Deadline of Fee payment,Parental Expectations;Being bullied by siblings;Poor Communication and misunderstandings,8,Covid;Anxiety or Tension,Comparison between them;Betrayal,4,Yes,Yes,No,Yes,No,No,Episodic acute stress
+Male,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Negligence of Children,3,Sinus or Migraine or Headaches;Low Energy,Jealousy;Mistrust,3,No,Yes,Yes,No,No,Yes,Episodic acute stress
+Female,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Divorce of Parents;Negligence of Children,5,Sinus or Migraine or Headaches;Covid;Insomnia (Sleep Deprivation);Sleeping Problem,Comparison between them;Mistrust,3,Yes,No,Yes,Yes,No,No,Episodic acute stress
+Male,Repay Loan Issues,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Anxiety or Tension;Sleeping Problem,Comparison between them;Mistrust,4,Yes,No,Yes,No,No,Yes,Episodic acute stress
+Male,Deadline of Fee payment,Being bullied by siblings;Negligence of Children,3,Covid;Concentration Problem,Comparison between them;Mistrust,3,No,Yes,No,No,Yes,Yes,Episodic acute stress
+Female,Repay Loan Issues;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,3,Low Energy;Sleeping Problem,Mistrust;Betrayal,2,Yes,No,Yes,Yes,No,Yes,Episodic acute stress
+Male,Repay Loan Issues;Payment for Hostel,Poor Communication and misunderstandings;Negligence of Children,4,Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem,Mistrust,5,Yes,Yes,Yes,No,No,No,Episodic acute stress
+Male,Payment for Hostel,Being bullied by siblings,2,Sleeping Problem,Comparison between them;Mistrust,3,No,No,Yes,No,No,Yes,Episodic acute stress
+Female,Repay Loan Issues;Payment for Hostel,Parental Expectations;Divorce of Parents;Poor Communication and misunderstandings,2,Malnutrition;Low Energy;Sleeping Problem,Mistrust,7,Yes,Yes,Yes,No,No,Yes,Episodic acute stress
+Female,Repay Loan Issues;Deadline of Fee payment;Payment for Hostel,Parental Expectations;Being bullied by siblings;Divorce of Parents;Negligence of Children,8,Sinus or Migraine or Headaches;Covid;Insomnia (Sleep Deprivation);Low Energy;Lonliness;Sleeping Problem;Concentration Problem,Conflicts;Comparison between them;Jealousy;Mistrust;Betrayal,6,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Divorce of Parents;Poor Communication and misunderstandings,3,Insomnia (Sleep Deprivation);Anxiety or Tension;Lonliness;Concentration Problem,Jealousy;Mistrust;Betrayal,1,Yes,Yes,No,No,Yes,Yes,Chronic stress
+Female,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Divorce of Parents;Negligence of Children,0,Covid;Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem;Concentration Problem,Comparison between them;Jealousy;Mistrust,6,No,No,Yes,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,10,Covid;Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem,Conflicts;Jealousy;Betrayal,1,Yes,Yes,No,Yes,No,Yes,Chronic stress
+Female,Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings;Negligence of Children,1,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem,Conflicts;Jealousy,2,No,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Sleeping Problem,Mistrust;Betrayal,3,Yes,Yes,Yes,No,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,3,Low Energy;Lonliness,Comparison between them;Jealousy,2,No,Yes,Yes,Yes,Yes,No,Chronic stress
+Male,Payment for Hostel,Parental Expectations;Being bullied by siblings;Poor Communication and misunderstandings,7,Covid;Low Energy;Concentration Problem,Conflicts;Mistrust,2,Yes,No,No,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Being bullied by siblings;Negligence of Children,5,Sinus or Migraine or Headaches;Low Energy;Anxiety or Tension,Comparison between them;Betrayal,4,Yes,Yes,Yes,Yes,No,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,4,Covid;Low Energy;Lonliness,Jealousy;Mistrust,1,No,Yes,Yes,Yes,Yes,No,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,8,Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem,Comparison between them;Jealousy,3,Yes,Yes,No,Yes,Yes,No,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings;Negligence of Children,3,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Lonliness,Jealousy;Betrayal,5,Yes,Yes,Yes,No,Yes,No,Chronic stress
+Male,Repay Loan Issues,Being bullied by siblings;Poor Communication and misunderstandings,4,Covid;Anxiety or Tension,Comparison between them;Jealousy;Betrayal,3,No,Yes,No,Yes,No,Yes,Chronic stress
+Female,Deadline of Fee payment,Divorce of Parents;Negligence of Children,3,Insomnia (Sleep Deprivation);Low Energy,Comparison between them,3,No,No,Yes,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,1,Sinus or Migraine or Headaches;Covid;Insomnia (Sleep Deprivation);Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Conflicts;Comparison between them;Mistrust,1,Yes,Yes,Yes,No,No,Yes,Chronic stress
+Female,Repay Loan Issues;Deadline of Fee payment,Poor Communication and misunderstandings,2,Malnutrition;Covid;Low Energy,Comparison between them;Mistrust;Betrayal,4,Yes,Yes,Yes,Yes,No,No,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Divorce of Parents,4,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Lonliness;Concentration Problem,Conflicts;Jealousy;Mistrust,5,Yes,Yes,Yes,Yes,Yes,No,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Divorce of Parents,4,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Lonliness;Concentration Problem,Conflicts;Jealousy;Mistrust,5,Yes,Yes,Yes,Yes,Yes,No,Chronic stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Negligence of Children,4,Covid;Low Energy;Anxiety or Tension,Conflicts;Comparison between them;Betrayal,3,Yes,Yes,No,Yes,Yes,No,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Divorce of Parents;Poor Communication and misunderstandings,2,Covid;Insomnia (Sleep Deprivation);Low Energy;Sleeping Problem,Jealousy;Mistrust,2,No,Yes,Yes,No,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,4,Covid;Anxiety or Tension;Concentration Problem,Jealousy;Mistrust,4,Yes,Yes,No,No,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment,Being bullied by siblings;Poor Communication and misunderstandings;Negligence of Children,3,Low Energy;Lonliness;Sleeping Problem,Comparison between them;Jealousy;Betrayal,4,Yes,Yes,Yes,Yes,No,No,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Parental Expectations;Being bullied by siblings;Divorce of Parents,3,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Low Energy;Sleeping Problem,Comparison between them;Jealousy;Betrayal,1,Yes,No,No,No,Yes,Yes,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Parental Expectations;Poor Communication and misunderstandings,2,Covid;Low Energy;Lonliness;Sleeping Problem,Comparison between them;Jealousy;Mistrust,3,Yes,Yes,Yes,No,No,Yes,Chronic stress
+Male,Deadline of Fee payment,Parental Expectations;Divorce of Parents;Poor Communication and misunderstandings,2,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Low Energy,Conflicts;Comparison between them;Jealousy,1,Yes,Yes,No,No,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Divorce of Parents,2,Malnutrition;Anxiety or Tension,Comparison between them;Betrayal,2,Yes,Yes,Yes,No,No,No,Chronic stress
+Male,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,2,Low Energy;Lonliness;Concentration Problem,Comparison between them;Jealousy,3,Yes,Yes,No,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Covid;Low Energy;Anxiety or Tension,Comparison between them;Mistrust;Betrayal,4,No,No,Yes,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings;Negligence of Children,0,Covid;Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension;Lonliness;Sleeping Problem;Concentration Problem,Comparison between them;Jealousy;Mistrust;Betrayal,1,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Parental Expectations;Divorce of Parents;Poor Communication and misunderstandings,1,Sinus or Migraine or Headaches;Covid;Insomnia (Sleep Deprivation);Concentration Problem,Comparison between them;Mistrust,1,No,Yes,Yes,No,Yes,No,Chronic stress
+Male,Repay Loan Issues,Parental Expectations;Being bullied by siblings,5,Malnutrition;Sinus or Migraine or Headaches;Covid,Conflicts;Comparison between them,3,Yes,Yes,No,No,Yes,Yes,Episodic acute stress
+Female,Repay Loan Issues;Deadline of Fee payment,Parental Expectations;Divorce of Parents,1,Low Energy;Sleeping Problem,Jealousy;Mistrust,2,No,Yes,Yes,Yes,Yes,No,Episodic acute stress
+Female,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Divorce of Parents,2,Covid;Low Energy;Sleeping Problem,Conflicts;Mistrust,2,No,No,Yes,Yes,Yes,No,Episodic acute stress
+Female,Deadline of Fee payment,Parental Expectations;Poor Communication and misunderstandings,1,Covid;Anxiety or Tension,Jealousy;Mistrust,4,Yes,Yes,Yes,No,Yes,Yes,Episodic acute stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,5,Covid;Anxiety or Tension;Sleeping Problem,Jealousy,2,No,No,No,No,Yes,Yes,Episodic acute stress
+Female,Deadline of Fee payment,Parental Expectations;Being bullied by siblings,7,Covid;Insomnia (Sleep Deprivation);Low Energy,Comparison between them;Jealousy,5,No,No,Yes,Yes,Yes,No,Episodic acute stress
+Female,Deadline of Fee payment,Parental Expectations;Divorce of Parents,1,Covid;Low Energy;Lonliness,Conflicts;Mistrust,2,No,No,Yes,Yes,Yes,No,Episodic acute stress
+Male,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,0,Insomnia (Sleep Deprivation);Anxiety or Tension,Mistrust,2,No,Yes,Yes,No,No,Yes,Episodic acute stress
+Female,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Poor Communication and misunderstandings,5,Covid;Low Energy;Concentration Problem,Mistrust,4,No,Yes,Yes,Yes,Yes,Yes,Episodic acute stress
+Male,Repay Loan Issues;Deadline of Fee payment,Parental Expectations;Divorce of Parents,3,Malnutrition;Anxiety or Tension;Sleeping Problem,Jealousy,5,Yes,No,Yes,Yes,No,Yes,Episodic acute stress
+Male,Repay Loan Issues,Parental Expectations;Poor Communication and misunderstandings,1,Covid;Low Energy;Lonliness,Mistrust,3,Yes,Yes,No,No,Yes,No,Episodic acute stress
+Female,Deadline of Fee payment,Parental Expectations,7,Covid,Conflicts,8,No,No,No,No,No,Yes,Acute Stress
+Female,Deadline of Fee payment,Being bullied by siblings,8,Sinus or Migraine or Headaches,Comparison between them,4,Yes,Yes,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Poor Communication and misunderstandings,2,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation),Conflicts;Mistrust,7,No,No,No,No,Yes,No,Acute Stress
+Male,Repay Loan Issues,Parental Expectations,1,Malnutrition;Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension;Lonliness,Betrayal,1,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Deadline of Fee payment;Payment for Hostel,Parental Expectations;Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,1,Sinus or Migraine or Headaches;Covid;Insomnia (Sleep Deprivation);Low Energy;Lonliness,Conflicts;Jealousy;Mistrust;Betrayal,1,Yes,Yes,Yes,No,Yes,No,Chronic stress
+Female,None,Parental Expectations,0,Malnutrition;Insomnia (Sleep Deprivation);Low Energy;Anxiety or Tension,Betrayal,1,Yes,Yes,Yes,Yes,Yes,Yes,Episodic acute stress
+Male,Repay Loan Issues,Parental Expectations,5,Covid;Low Energy,Jealousy,3,No,No,No,No,No,No,Acute Stress
+Female,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Negligence of Children,6,Malnutrition;Insomnia (Sleep Deprivation);Lonliness;Concentration Problem,Jealousy;Betrayal,5,Yes,Yes,No,Yes,No,No,Episodic acute stress
+Male,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Negligence of Children,3,Malnutrition;Covid;Lonliness,Jealousy;Betrayal,4,Yes,No,No,Yes,Yes,Yes,Episodic acute stress
+Female,Repay Loan Issues,Parental Expectations,2,Malnutrition,Conflicts,5,No,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Negligence of Children,3,Covid;Anxiety or Tension;Sleeping Problem,Comparison between them;Betrayal,3,Yes,Yes,No,No,Yes,No,Episodic acute stress
+Male,Repay Loan Issues,Parental Expectations,2,Malnutrition,Conflicts,5,No,No,No,No,No,No,Acute Stress
+Female,Repay Loan Issues,Poor Communication and misunderstandings,0,Sleeping Problem,Betrayal,2,No,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues,Negligence of Children,3,Low Energy;Anxiety or Tension;Lonliness,Conflicts;Jealousy,2,No,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Divorce of Parents,2,Malnutrition,Comparison between them;Betrayal,10,No,No,No,No,No,No,Acute Stress
+Male,Payment for Hostel,Negligence of Children,3,Sleeping Problem,Conflicts,2,Yes,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues;Deadline of Fee payment;Payment for Hostel,Parental Expectations;Being bullied by siblings,0,Covid;Insomnia (Sleep Deprivation),Conflicts;Comparison between them;Jealousy,2,Yes,Yes,Yes,Yes,No,No,Chronic stress
+Female,Payment for Hostel,Divorce of Parents,5,Malnutrition;Sinus or Migraine or Headaches,Conflicts,3,No,No,No,No,No,No,Acute Stress
+Male,Payment for Hostel,Parental Expectations,2,Concentration Problem,Mistrust,4,No,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues,Negligence of Children,1,Low Energy,Jealousy,2,No,No,No,No,No,No,Acute Stress
+Female,Payment for Hostel,Being bullied by siblings,1,Malnutrition,Comparison between them,2,No,No,No,No,No,No,Acute Stress
+Male,Payment for Hostel,Being bullied by siblings,3,Insomnia (Sleep Deprivation),Jealousy,2,No,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Divorce of Parents,1,Covid;Concentration Problem,Jealousy,3,No,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Being bullied by siblings,2,Low Energy,Jealousy;Betrayal,3,No,No,No,No,Yes,No,Acute Stress
+Female,Repay Loan Issues;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,1,Malnutrition;Insomnia (Sleep Deprivation);Lonliness,Comparison between them;Mistrust,3,Yes,Yes,No,Yes,No,No,Episodic acute stress
+Female,Repay Loan Issues,Parental Expectations;Negligence of Children,2,Covid;Anxiety or Tension,Jealousy;Mistrust,3,Yes,No,No,Yes,No,No,Episodic acute stress
+Male,Payment for Hostel,Divorce of Parents,4,Covid;Anxiety or Tension,Comparison between them;Betrayal,3,No,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Being bullied by siblings;Negligence of Children,2,Insomnia (Sleep Deprivation);Lonliness,Jealousy;Betrayal,3,Yes,No,No,No,Yes,Yes,Episodic acute stress
+Male,Repay Loan Issues,Divorce of Parents,1,Covid;Lonliness,Jealousy;Betrayal,2,Yes,Yes,Yes,Yes,No,No,Episodic acute stress
+Female,Repay Loan Issues;Payment for Hostel,Divorce of Parents;Negligence of Children,3,Covid;Low Energy;Sleeping Problem,Comparison between them;Jealousy,2,No,No,Yes,Yes,No,Yes,Episodic acute stress
+Male,Repay Loan Issues,Being bullied by siblings;Negligence of Children,2,Sinus or Migraine or Headaches;Anxiety or Tension;Sleeping Problem,Conflicts,6,No,Yes,No,No,Yes,No,Episodic acute stress
+Male,Repay Loan Issues;Payment for Hostel,Parental Expectations,2,Insomnia (Sleep Deprivation);Lonliness,Jealousy,4,Yes,Yes,No,No,Yes,No,Episodic acute stress
+Male,Repay Loan Issues,Parental Expectations;Negligence of Children,2,Malnutrition;Insomnia (Sleep Deprivation);Sleeping Problem,Jealousy,3,Yes,No,Yes,Yes,No,No,Episodic acute stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings;Negligence of Children,5,Sinus or Migraine or Headaches;Covid;Anxiety or Tension,Jealousy;Betrayal,4,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings;Negligence of Children,2,Covid;Low Energy;Concentration Problem,Jealousy;Betrayal,4,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Poor Communication and misunderstandings,2,Covid;Low Energy;Sleeping Problem,Comparison between them;Mistrust,3,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,3,Covid;Anxiety or Tension;Concentration Problem,Conflicts,4,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,4,Covid;Low Energy;Sleeping Problem,Comparison between them;Jealousy;Betrayal,4,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Payment for Hostel,Parental Expectations;Poor Communication and misunderstandings;Negligence of Children,3,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Lonliness,Comparison between them;Jealousy,1,Yes,Yes,No,No,No,Yes,Chronic stress
+Female,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Divorce of Parents;Negligence of Children,2,Insomnia (Sleep Deprivation);Anxiety or Tension;Lonliness,Comparison between them;Mistrust;Betrayal,1,Yes,Yes,Yes,Yes,Yes,No,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Low Energy;Anxiety or Tension,Comparison between them;Betrayal,3,Yes,Yes,Yes,No,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment,Parental Expectations;Divorce of Parents;Negligence of Children,10,Insomnia (Sleep Deprivation);Anxiety or Tension;Sleeping Problem,Jealousy;Betrayal,2,Yes,Yes,Yes,No,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Being bullied by siblings;Poor Communication and misunderstandings,9,Covid;Anxiety or Tension;Sleeping Problem,Comparison between them;Jealousy;Betrayal,1,Yes,Yes,Yes,No,No,Yes,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,7,Covid;Lonliness;Sleeping Problem,Conflicts;Mistrust,3,Yes,Yes,Yes,Yes,No,Yes,Chronic stress
+Male,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Negligence of Children,0,Sinus or Migraine or Headaches;Insomnia (Sleep Deprivation);Sleeping Problem,Comparison between them;Mistrust,10,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Divorce of Parents;Negligence of Children,2,Sinus or Migraine or Headaches;Low Energy;Lonliness,Conflicts;Comparison between them;Mistrust,10,Yes,Yes,Yes,No,No,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Divorce of Parents;Poor Communication and misunderstandings,2,Sinus or Migraine or Headaches;Low Energy;Sleeping Problem,Conflicts;Mistrust,4,Yes,No,Yes,Yes,No,No,Chronic stress
+Female,Payment for Hostel,Being bullied by siblings;Negligence of Children,10,Covid;Anxiety or Tension;Concentration Problem,Comparison between them;Jealousy,10,Yes,Yes,Yes,No,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,1,Covid;Anxiety or Tension;Lonliness,Comparison between them,2,Yes,Yes,Yes,No,No,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Negligence of Children,10,Covid;Anxiety or Tension;Sleeping Problem,Conflicts;Jealousy,2,No,Yes,Yes,Yes,No,Yes,Chronic stress
+Male,Deadline of Fee payment,Divorce of Parents,4,Anxiety or Tension,Jealousy,3,No,No,Yes,No,No,No,Acute Stress
+Male,Repay Loan Issues,Poor Communication and misunderstandings,2,Insomnia (Sleep Deprivation),Conflicts;Jealousy,3,Yes,Yes,No,No,No,No,Acute Stress
+Male,Deadline of Fee payment,Being bullied by siblings,4,Covid,Comparison between them,4,Yes,No,No,Yes,Yes,Yes,Acute Stress
+Male,Repay Loan Issues,Divorce of Parents,3,Sinus or Migraine or Headaches,Comparison between them,4,Yes,No,No,No,No,Yes,Acute Stress
+Male,Repay Loan Issues;Payment for Hostel,Being bullied by siblings,5,Malnutrition;Insomnia (Sleep Deprivation),Mistrust,3,Yes,No,No,No,Yes,No,Acute Stress
+Female,Repay Loan Issues,Being bullied by siblings,10,Malnutrition;Lonliness,Comparison between them,5,Yes,No,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Being bullied by siblings;Poor Communication and misunderstandings,5,Sinus or Migraine or Headaches;Lonliness,Jealousy,5,Yes,No,No,No,No,Yes,Acute Stress
+Male,Deadline of Fee payment,Being bullied by siblings,3,Covid,Mistrust,3,Yes,No,No,Yes,No,No,Acute Stress
+Female,Deadline of Fee payment,Poor Communication and misunderstandings,2,Malnutrition;Insomnia (Sleep Deprivation),Jealousy,3,Yes,No,No,No,No,No,Acute Stress
+Male,Repay Loan Issues;Deadline of Fee payment,Divorce of Parents;Poor Communication and misunderstandings,1,Sinus or Migraine or Headaches;Lonliness,Conflicts;Jealousy;Betrayal,4,Yes,No,Yes,No,Yes,Yes,Chronic stress
+Male,Repay Loan Issues;Deadline of Fee payment,Being bullied by siblings;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Covid;Sleeping Problem,Jealousy;Mistrust,3,Yes,Yes,Yes,Yes,Yes,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Poor Communication and misunderstandings,10,Sinus or Migraine or Headaches;Low Energy,Comparison between them;Betrayal,3,Yes,Yes,No,Yes,Yes,No,Chronic stress
+Female,Repay Loan Issues;Payment for Hostel,Parental Expectations;Poor Communication and misunderstandings,2,Low Energy;Anxiety or Tension;Concentration Problem,Mistrust,2,Yes,Yes,No,Yes,Yes,No,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Being bullied by siblings;Poor Communication and misunderstandings,3,Sinus or Migraine or Headaches;Sleeping Problem,Conflicts;Comparison between them,5,Yes,Yes,Yes,Yes,Yes,No,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Parental Expectations;Divorce of Parents;Poor Communication and misunderstandings,3,Covid;Low Energy;Anxiety or Tension;Sleeping Problem,Jealousy;Mistrust,3,Yes,Yes,Yes,Yes,No,Yes,Chronic stress
+Male,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,10,Covid;Insomnia (Sleep Deprivation);Low Energy;Sleeping Problem,Comparison between them;Jealousy;Mistrust,3,Yes,Yes,Yes,Yes,No,Yes,Chronic stress
+Female,Deadline of Fee payment;Payment for Hostel,Being bullied by siblings;Poor Communication and misunderstandings,4,Insomnia (Sleep Deprivation);Low Energy;Lonliness,Comparison between them;Mistrust,4,Yes,Yes,Yes,No,Yes,No,Chronic stress
+Female,Repay Loan Issues;Deadline of Fee payment,Parental Expectations;Divorce of Parents;Negligence of Children,3,Covid;Low Energy;Anxiety or Tension;Concentration Problem,Comparison between them;Mistrust,3,No,Yes,Yes,No,Yes,Yes,Chronic stress
+Female,Repay Loan Issues,Being bullied by siblings;Negligence of Children,3,Sinus or Migraine or Headaches;Sleeping Problem,Conflicts,3,Yes,Yes,No,No,No,No,Acute Stress
+Female,Deadline of Fee payment,Being bullied by siblings;Poor Communication and misunderstandings,2,Covid;Lonliness,Comparison between them,3,Yes,No,Yes,Yes,No,No,Acute Stress
+Male,Repay Loan Issues,Being bullied by siblings,3,Low Energy,Jealousy,3,Yes,Yes,No,No,No,No,Acute Stress

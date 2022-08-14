@@ -1,4 +1,4 @@
-from flask import Flask,render_template,url_for,flash,redirect, request, redirect
+from flask import Flask,render_template,url_for,flash,redirect, request, redirect, session
 from time import timezone
 from forms import RegistrationForm,LoginForm
 from flask_sqlalchemy import SQLAlchemy
@@ -24,6 +24,7 @@ class Users(db.Model, UserMixin):
     email = db.Column(db.String(length=100), unique=True, nullable=False)
     password = db.Column(db.String(length=100), nullable=False)
     user_type = db.Column(db.String(length=20), nullable = False)
+    stress_level = db.Column(db.String(length=100),nullable = False)
     created_at = db.Column(db.DateTime(timezone=True),server_default=func.now())
 
     #debug
@@ -65,6 +66,7 @@ def add_admin():
             email = request.form['email']
             password = request.form['password']
             user_type = "admin"
+            stressLevel = "Not measured"
         #check if the entered username and email already exist in the db.     
             new_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
             new_email = Users.query.filter_by(email=email).first()#get recently registered user's email from db to confirm registration
@@ -76,7 +78,7 @@ def add_admin():
                 flash('The Email is already registered.', 'danger')
         #else if unique usename and email then register user
             else:
-                user = Users(username = username, email = email,password = password, user_type = user_type)             
+                user = Users(username = username, email = email,password = password, user_type = user_type, stress_level = stressLevel)             
                 db.session.add(user)
                 db.session.commit()
                 reg_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
@@ -109,6 +111,10 @@ def register():
             email = request.form['email']
             password = request.form['password']
             user_type = "student"
+            stressLevel = "Not measured"
+           
+
+
         #check if the entered username and email already exist in the db.     
             new_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
             new_email = Users.query.filter_by(email=email).first()#get recently registered user's email from db to confirm registration
@@ -120,7 +126,7 @@ def register():
                 flash('The Email is already registered.', 'danger')
         #else if unique usename and email then register user
             else:
-                user = Users(username = username, email = email,password = password, user_type = user_type)             
+                user = Users(username = username, email = email,password = password, user_type = user_type, stress_level = stressLevel)             
                 db.session.add(user)
                 db.session.commit()
                 reg_user = Users.query.filter_by(username=username).first()#get recently registered user's username from db to confirm registration
@@ -149,6 +155,9 @@ def login():
         if form.validate_on_submit():
             email = request.form['email']
             password = request.form['password']
+            session['password'] = request.form['password']
+            session['email'] = request.form['email']
+            
             user_db = Users.query.filter_by(email=email).first()#get recently registered user's username from db to confirm registration
             
             
@@ -267,6 +276,19 @@ def predict():
             pred = "Episodic Acute Stress"
         else:
             pred = "Chronic Stress"
+
+        if current_user.is_authenticated:
+                reg_user = Users.query.filter_by(email=session["email"]).first()
+                username = reg_user.username
+                # email = reg_user.email
+                # password = reg_user.password
+                # user_type = reg_user.user_type
+                
+               
+                num_rows_updated = Users.query.filter_by(username=username).update(dict(stress_level=pred))
+                #stress = Users(username = username, email = email,password = password, user_type = user_type, stress_level = pred)            
+                
+                db.session.commit()
         return render_template('result.html',prediction_text = pred)
 
 
